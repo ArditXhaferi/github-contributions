@@ -2,6 +2,9 @@ const express = require("express");
 const app = express();
 const contributions = require("./api/contributions");
 const fetch = require("node-fetch");
+var cors = require('cors')
+
+app.use(cors())
 
 app.use(express.json({ extended: false }));
 
