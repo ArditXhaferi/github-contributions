@@ -24,6 +24,7 @@ router.get("/", async (req, res) => {
                           resolve(data.contributions.slice(index, index + 30))
                       }
                   });
+                  reject(data);
               })
               .catch((error) => {
                   reject(error);
