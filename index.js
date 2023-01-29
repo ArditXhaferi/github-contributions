@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const contributions = require("./api/contributions");
+const fetch = require("node-fetch");
 
 app.use(express.json({ extended: false }));
 
